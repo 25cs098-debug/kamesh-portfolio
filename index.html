@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kamesh | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">K</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Initializing...</p>
+    </div>
+  </div>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Dark/Light Mode Toggle -->
+  <button id="themeToggle" aria-label="Toggle theme">
+    <i class="fas fa-moon" id="themeIcon"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Kamesh<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">👋 Available for opportunities</div>
+        <h1 class="hero-name">Hi, I'm <span class="gradient-text">Kamesh</span></h1>
+        <h2 class="hero-title">
+          <span class="static-text">I'm a </span>
+          <span id="typingText" class="typing-text"></span>
+          <span class="cursor-blink">|</span>
+        </h2>
+        <p class="hero-desc">
+          Passionate Computer Science student crafting elegant digital experiences. 
+          I transform complex ideas into beautiful, performant web applications that leave lasting impressions.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-target="15">0</span><span>+</span>
+            <p>Projects</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="7">0</span><span>+</span>
+            <p>Technologies</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="3">0</span><span>+</span>
+            <p>Certifications</p>
+          </div>
+        </div>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-outline">Contact Me <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="profile-wrapper">
+          <div class="profile-ring"></div>
+          <div class="profile-img-container">
+            <div class="profile-placeholder">
+              <span>K</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-html"><i class="fab fa-html5"></i> HTML5</div>
+          <div class="floating-badge badge-react"><i class="fab fa-react"></i> React</div>
+          <div class="floating-badge badge-node"><i class="fab fa-node-js"></i> Node</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A glimpse into my journey, passion, and what drives me</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="about-icon-wrap"><i class="fas fa-user-astronaut"></i></div>
+          <h3>Who I Am</h3>
+          <p>I'm a final-year B.Sc Computer Science student with a deep passion for building things on the web. I believe great software is like great art — functional, purposeful, and beautiful.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon-wrap"><i class="fas fa-code"></i></div>
+          <h3>What I Do</h3>
+          <p>I specialize in Full Stack Web Development using modern technologies like React, Node.js, and MySQL. I love turning ideas into interactive, scalable web applications.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon-wrap"><i class="fas fa-rocket"></i></div>
+          <h3>My Goals</h3>
+          <p>I aim to join an innovative tech company where I can contribute, grow, and eventually lead impactful projects. I'm currently seeking internships and full-time roles.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon-wrap"><i class="fas fa-lightbulb"></i></div>
+          <h3>My Interests</h3>
+          <p>Beyond coding, I enjoy open-source contributions, UI/UX design exploration, competitive programming, and staying updated with the latest in web technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Arsenal</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies I work with and my proficiency levels</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+            <div>
+              <h4>HTML5</h4>
+              <span class="skill-level">Expert</span>
+            </div>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+            <div>
+              <h4>CSS3</h4>
+              <span class="skill-level">Expert</span>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon js"><i class="fab fa-js"></i></div>
+            <div>
+              <h4>JavaScript</h4>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon bootstrap"><i class="fab fa-bootstrap"></i></div>
+            <div>
+              <h4>Bootstrap</h4>
+              <span class="skill-level">Expert</span>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon react"><i class="fab fa-react"></i></div>
+            <div>
+              <h4>React JS</h4>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon node"><i class="fab fa-node-js"></i></div>
+            <div>
+              <h4>Node JS</h4>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon mysql"><i class="fas fa-database"></i></div>
+            <div>
+              <h4>MySQL</h4>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of projects I've built with passion</p>
+      </div>
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="ui">UI/Design</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card reveal" data-category="ui web">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p1">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>A modern, responsive portfolio website showcasing my skills, projects, and experience with smooth animations and glassmorphism design.</p>
+            <a href="#" class="project-github-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-card glass-card reveal" data-category="web backend">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p2">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>React</span><span>Node JS</span><span>MySQL</span>
+            </div>
+            <h3>Workshop Registration System</h3>
+            <p>Full-stack application for managing workshop registrations with admin dashboard, participant tracking, and email notifications.</p>
+            <a href="#" class="project-github-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-card glass-card reveal" data-category="backend web">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p3">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Bootstrap</span><span>Node JS</span><span>MySQL</span>
+            </div>
+            <h3>Library Book Catalog</h3>
+            <p>A digital library management system with search, filter, borrow/return tracking, and an intuitive catalog browsing interface.</p>
+            <a href="#" class="project-github-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-card glass-card reveal" data-category="ui web">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p4">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>React</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <h3>Online Course Website</h3>
+            <p>An e-learning platform with course listings, video player, progress tracking, quizzes, and a responsive course catalog interface.</p>
+            <a href="#" class="project-github-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-card glass-card reveal" data-category="backend web">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p5">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>React</span><span>Node JS</span><span>MySQL</span>
+            </div>
+            <h3>Job Application Portal</h3>
+            <p>A recruitment platform with job listings, application tracking, resume uploads, interview scheduling, and HR admin panel.</p>
+            <a href="#" class="project-github-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Educational <span class="gradient-text">Background</span></h2>
+        <p class="section-subtitle">The academic foundation that shaped my technical expertise</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div class="tl-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <h3>B.Sc Computer Science</h3>
+                <span class="tl-institution">Sri Ramakrishna College of Arts & Science</span>
+              </div>
+              <span class="tl-badge current">Current</span>
+            </div>
+            <div class="tl-body">
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar"></i> 2022 – 2025</span>
+                <span><i class="fas fa-star"></i> CGPA: 8.6 / 10</span>
+                <span><i class="fas fa-map-marker-alt"></i> Coimbatore, TN</span>
+              </div>
+              <p>Comprehensive study of computer science fundamentals including data structures, algorithms, DBMS, software engineering, and web technologies. Active member of the coding club and tech fest organizer.</p>
+              <div class="tl-tags">
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+                <span>DBMS</span>
+                <span>Web Dev</span>
+                <span>Software Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div class="tl-icon"><i class="fas fa-school"></i></div>
+              <div>
+                <h3>Higher Secondary (12th)</h3>
+                <span class="tl-institution">Government Higher Secondary School</span>
+              </div>
+              <span class="tl-badge completed">Completed</span>
+            </div>
+            <div class="tl-body">
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar"></i> 2020 – 2022</span>
+                <span><i class="fas fa-star"></i> Percentage: 89.4%</span>
+                <span><i class="fas fa-map-marker-alt"></i> Tamil Nadu</span>
+              </div>
+              <p>Completed higher secondary education with Computer Science as a major subject. Developed foundational programming skills and secured district-level ranks in computer science exams.</p>
+              <div class="tl-tags">
+                <span>Computer Science</span>
+                <span>Mathematics</span>
+                <span>Physics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div class="tl-icon"><i class="fas fa-book"></i></div>
+              <div>
+                <h3>Secondary Education (10th)</h3>
+                <span class="tl-institution">Government High School</span>
+              </div>
+              <span class="tl-badge completed">Completed</span>
+            </div>
+            <div class="tl-body">
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar"></i> 2018 – 2020</span>
+                <span><i class="fas fa-star"></i> Percentage: 91.2%</span>
+                <span><i class="fas fa-map-marker-alt"></i> Tamil Nadu</span>
+              </div>
+              <p>Achieved excellent results in the state board examinations. Participated in science exhibitions and inter-school coding competitions, sparking an early interest in technology.</p>
+              <div class="tl-tags">
+                <span>Science</span>
+                <span>Mathematics</span>
+                <span>English</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+        <p class="section-subtitle">Professional certifications that validate my expertise</p>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card reveal">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon"><i class="fab fa-react"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Meta</span>
+            <h3>React Front-End Developer</h3>
+            <p>Professional certificate covering React components, hooks, routing, and advanced state management patterns.</p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar"></i> Oct 2024</span>
+              <a href="#" class="cert-link">Verify <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon"><i class="fab fa-js-square"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">freeCodeCamp</span>
+            <h3>JavaScript Algorithms & Data Structures</h3>
+            <p>300-hour certification covering ES6+, functional programming, object-oriented programming, and algorithm challenges.</p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar"></i> Jul 2024</span>
+              <a href="#" class="cert-link">Verify <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon"><i class="fab fa-node-js"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Udemy</span>
+            <h3>Node.js, Express & MongoDB Bootcamp</h3>
+            <p>Complete backend development course covering REST APIs, authentication, security, deployment, and database design.</p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar"></i> May 2024</span>
+              <a href="#" class="cert-link">Verify <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon"><i class="fas fa-database"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Oracle</span>
+            <h3>MySQL Database Foundations</h3>
+            <p>Oracle-certified course on relational databases, SQL queries, joins, indexing, transactions, and performance optimization.</p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar"></i> Feb 2024</span>
+              <a href="#" class="cert-link">Verify <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon"><i class="fab fa-html5"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">W3Schools</span>
+            <h3>HTML & CSS Certification</h3>
+            <p>Comprehensive certification covering modern HTML5 semantics, CSS3 animations, Flexbox, Grid, and responsive design principles.</p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar"></i> Nov 2023</span>
+              <a href="#" class="cert-link">Verify <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Google</span>
+            <h3>Google Cloud Fundamentals</h3>
+            <p>Introduction to cloud computing concepts, GCP services, deployment models, and scalable infrastructure on Google Cloud.</p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar"></i> Sep 2023</span>
+              <a href="#" class="cert-link">Verify <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Let's talk!</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h3>Let's build something amazing together</h3>
+          <p>I'm currently open to internship and full-time opportunities. If you have a project that needs a passionate developer, I'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <a href="mailto:kamesh@email.com">kamesh@email.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span>Location</span>
+                <p>Coimbatore, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:kamesh@email.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required/>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required/>
+              <div class="form-line"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX"/>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <div class="form-line"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <p>Message sent successfully! I'll get back to you soon.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">Kamesh<span>.</span></a>
+        <p>Full Stack Developer & Web Designer crafting digital experiences with passion and precision.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-col">
+        <h4>Connect With Me</h4>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:kamesh@email.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span class="gradient-text">Kamesh</span>. Designed & Built with <span class="heart">♥</span> in Tamil Nadu, India.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
